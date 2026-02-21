@@ -1,0 +1,26 @@
+TAX INVOICE
+
+From: BuildRight Construction Ltd.
+EIN: 98-7654321
+Invoice Number: BR-2024-0042
+Date of Issue: 2024-02-01
+Payment Due: 2024-03-01
+
+Client: Metro City Council
+Project: Riverside Road Resurfacing
+
+Description                         Qty    Unit Price    Total
+-------------------------------------------------------------------
+Road base preparation               1      $15,000.00    $15,000.00
+Asphalt paving (per sq meter)       500    $45.00        $22,500.00
+Line marking                        1      $2,500.00     $2,500.00
+Traffic management                  3 days $800.00       $2,400.00
+Project management fee              1      $3,600.00     $3,600.00
+-------------------------------------------------------------------
+Subtotal:                                               $46,000.00
+GST (5%):                                               $2,300.00
+TOTAL DUE:                                             $48,300.00
+
+Please remit to: BuildRight Construction Ltd.
+BSB: 062-000  Account: 12345678
+Reference: BR-2024-0042

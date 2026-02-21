@@ -1,0 +1,25 @@
+INVOICE
+
+Vendor: Acme Corp
+Tax ID: 12-3456789
+Invoice #: INV-2024-001
+Invoice Date: 2024-01-15
+Due Date: 2024-02-15
+
+Bill To:
+GlobalTech Inc.
+123 Business Ave
+New York, NY 10001
+
+Line Items:
+Software License: $1,200.00
+Support Package: $300.00
+Training Session: $500.00
+
+Subtotal: $2,000.00
+Tax (10%): $200.00
+Total: $2,200.00
+
+Payment Terms: Net 30
+Bank: First National Bank
+Account: 0042-9981-234

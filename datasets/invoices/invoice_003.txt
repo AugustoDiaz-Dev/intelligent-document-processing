@@ -1,0 +1,24 @@
+FREELANCE INVOICE
+
+Designer: Jane Doe Creative Studio
+Tax ID: 55-1234567
+Invoice: JDCS-2024-019
+Invoice date: 2024-03-10
+Due date: 2024-03-25
+
+Client:
+Startup Ventures LLC
+789 Innovation Drive
+San Francisco, CA 94105
+
+Services Rendered
+-----------------
+Brand identity design          $2,500.00
+Website mockup (5 pages)       $1,800.00
+Icon set (20 icons)              $600.00
+Revision rounds (3x)             $450.00
+
+Total: $5,350.00
+
+Note: Late payments subject to 1.5% monthly interest.
+Questions? jane@janedoecreative.com
