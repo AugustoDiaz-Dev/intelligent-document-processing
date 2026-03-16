@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Intelligent Document Processing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top-bar">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Intelligent Document Processing</span>
+        </div>
+        <nav class="nav-links">
+          <span class="pill active">Demo</span>
+          <a href="https://intelligent-document-processing-qcbn.onrender.com/docs" target="_blank" rel="noreferrer" class="pill">API Docs</a>
+          <a href="https://github.com/AugustoDiaz-Dev/intelligent-document-processing" target="_blank" rel="noreferrer" class="pill subtle">GitHub</a>
+        </nav>
+      </header>
+
+      <section class="glass">
+        <div class="glass-left">
+          <h1>Upload an invoice and see the AI extraction.</h1>
+          <p class="subtitle">
+            This demo sends your PDF to the backend, runs OCR + extraction + validation, and shows the
+            structured result with confidence scores.
+          </p>
+
+          <form id="upload-form" class="upload-zone">
+            <label for="file-input" class="upload-label">
+              <input id="file-input" type="file" accept="application/pdf" hidden />
+              <div class="upload-icon">⬆︎</div>
+              <div class="upload-text">
+                <strong>Drop a PDF here</strong>
+                <span>or click to choose a file</span>
+              </div>
+            </label>
+            <button type="submit" class="primary-btn">Run extraction</button>
+            <p class="hint">
+              Uses mock OCR + <code>EXTRACTION_MODE={{EXTRACTION_MODE}}</code> on the backend.
+            </p>
+          </form>
+
+          <div id="status" class="status"></div>
+        </div>
+
+        <div class="glass-right">
+          <div class="panel-header">
+            <span class="panel-title">Extraction preview</span>
+            <span id="doc-id" class="badge"></span>
+          </div>
+          <div id="result" class="result">
+            <p class="muted">
+              Upload an invoice to see extracted fields, validation checks, and the processing timeline.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

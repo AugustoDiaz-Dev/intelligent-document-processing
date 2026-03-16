@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: doc-processing-system
+Version: 0.1.0
+Summary: Project 2: Intelligent Document Processing System
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.115
+Requires-Dist: uvicorn[standard]>=0.30
+Requires-Dist: pydantic>=2.7
+Requires-Dist: pydantic-settings>=2.3
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: SQLAlchemy[asyncio]>=2.0
+Requires-Dist: asyncpg>=0.29
+Requires-Dist: tenacity>=8.3
+Requires-Dist: openai>=1.30
+Requires-Dist: httpx>=0.27
+Provides-Extra: dev
+Requires-Dist: pytest>=8.2; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"
+Requires-Dist: httpx>=0.27; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+
 # Intelligent Document Processing System (Project 2)
 
 This folder contains the **boilerplate + first working steps** for **Project 2: Intelligent Document Processing System** from `project.md`.
@@ -33,7 +56,7 @@ pip install -e ".[dev]"
 Run the API:
 
 ```bash
-export DATABASE_URL="postgresql+asyncpg://docproc:docproc@localhost:5433/docproc"
+export DATABASE_URL="postgresql+asyncpg://docproc:docproc@localhost:5432/docproc"
 uvicorn app.main:app --reload --port 8001
 ```
 
@@ -50,10 +73,6 @@ Example upload:
 curl -X POST "http://localhost:8001/documents/upload" \
   -F "file=@invoice.pdf"
 ```
-
-## Deployment
-
-To run locally with Docker and to **deploy for recruiters** (Railway, Render, Fly.io), see **[DEPLOYMENT.md](DEPLOYMENT.md)**.
 
 ## Tracking
 

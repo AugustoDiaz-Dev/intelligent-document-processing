@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import router
 from app.core.config import settings
@@ -13,14 +14,24 @@ from app.db.init_db import init_db
 def create_app() -> FastAPI:
     configure_logging(settings.log_level)
     app = FastAPI(title="Intelligent Document Processing", version="0.1.0")
+
+    # Allow the separate UI (local dev + hosted) to call this API from the browser.
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
     app.include_router(router)
-    
+
     @app.get("/")
     async def root():
         return {
             "message": "Welcome to the Intelligent Document Processing API",
             "docs": "/docs",
-            "health": "/health"
+            "health": "/health",
         }
 
     @app.on_event("startup")
