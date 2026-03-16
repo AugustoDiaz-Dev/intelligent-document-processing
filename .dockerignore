@@ -1,0 +1,15 @@
+.venv
+.env
+.env.*
+.git
+__pycache__
+*.pyc
+.pytest_cache
+.coverage
+htmlcov
+*.egg-info
+.DS_Store
+tests
+docs
+*.md
+!README.md
